@@ -1,0 +1,23 @@
+var Heroes = {
+        Koh: {
+            health: 100,
+            attack: 15,
+            mana: 50,
+        },
+        Hass: {
+            health: 150,
+            attack: 25,
+            mana: 30,
+        },
+        Muri: {
+            health: 110,
+            attack: 20,
+            mana: 100,
+            
+        },
+        Cham: {
+            health: 100,
+            attack: 18,
+            mana: 150,
+        }
+    };
