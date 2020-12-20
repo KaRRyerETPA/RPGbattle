@@ -2,25 +2,17 @@ p1{
    font-size: 25px;
    text-decoration: underline;
 }
-ph{
-  font-size: 20px;
-  color : green;
-}
-pm{
-  font-size: 20px;
-  color : blue;
-}
-pl{
+
+td{
   font-size: 20px;
   color :  red;
 }
-pa{
+tr{
   font-size: 30px;
   font-weight: bold;
 }
 pde{
-  font-size :  20px;
-}
+ }
 img{
     width : 40%;
     height : 100%;
@@ -46,62 +38,22 @@ action{
   justify-content: space-around;
   background-color: rgba(30, 50, 50, 0.8);
 }
-describe{
-  border: 3px solid black;
-  display: flex;
-  align-items: flex-start;
+.monsters{
+    border: 5px solid orange;
   background-color: rgba(30, 50, 50, 0.8);
 }
-space{
-  display: flex;
-  justify-content: space-between;
-  height : 60%;
-  width : 30%;
-}
-Level{
-  border: 3px solid red;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.characters{
+  border: 5px solid orange;
   background-color: rgba(30, 50, 50, 0.8);
-  height: 100%;
-  width: 50%;
-}
-Mana{
-  border: 3px solid DodgerBlue;
+ }
+ orders{
+  border: 5px solid orange;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: rgba(30, 50, 50, 0.8);
-  height: 100%;
-  width: 50%;
-}
-health{
-  border: 3px solid green;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: rgba(30, 50, 50, 0.8);
-  height: 100%;
-  width: 50%;
-}
-name {
-  border: 3px solid black;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgba(30, 50, 50, 0.8);
-  width: 50%;
-  }
-titre {
-  border: 3px solid orange;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgba(30, 50, 50, 0.8);
+  
   width: 15%;
   }
 body{
   background-image:url(https://data.photofunky.net/output/image/0/e/c/a/0eca20/photofunky.gif);
   background-repeat:no-repeat;
   background-size: 100% 100%;
-
-}
+ }

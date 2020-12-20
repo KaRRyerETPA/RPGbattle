@@ -1,72 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-            <head>
-                <title> Dragon Quest </title>
-                <meta charset="utf8"/>
-                <link href="interface" rel="stylesheet" type="text/css" media="all"> 
-            </head>
+<head>
+                <title> RPGbattle </title>
+                <meta charset="UTF-8"/> 
+            <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
 
       <body>
 
-        <titre>
-
-          <p1>Follow Orders</p1>
-
-        </titre>
-
         
-        <Stat>
+<table class="characters" id="table">
 
-          <name>
-
-            <p1>Koh</p1> <p1>Hass</p1>
-            <p1>Muri</p1> <p1>Cham</p1>
-
-          </name>
-
-          <health>
-
-            <ph>Health : 100</ph>  <ph>Health : 150</ph>
-            <ph>Health : 110</ph>  <ph>Health : 100</ph>
-
-          </health>
-
-          <mana>
-
-            <pm>Mana : 50 </pm> <pm>Mana : 30 </pm>
-            <pm>Mana : 100 </pm> <pm>Mana : 150 </pm>
-
-          </mana>
-
-          <level>
-
-            <pl> Damage : 15 </pl> <pl> Damage : 25 </pl>
-            <pl> Damage : 20 </pl> <pl> Damage : 18 </pl>
-
-          </level>
-
-        </Stat>
-
-     <br/><br/>
-
-  <Middle>
-
-     <action>
-
-      <pa>Fight</pa> <pa>Change</pa>
-      <pa>Tactics</pa> <pa>Run</pa>
-
-     </action>
-
-    <describe>
-
-     <pde>Description :</pde>
-
-    </describe>
-          
-   <img src="https://opengameart.org/sites/default/files/styles/medium/public/boss-preview.png">
-        
-  </Middle>
- </body>
+<tr class="your_characters">
+  <td class="stats">Hero :</td>
+<td class="stats" id="koh">Koh</td>
+<td class="stats" id="hass">Hass</td>
+<td class="stats" id="muri">Muri</td>
+<td class="stats" id="cham">Cham</td>
+                                      </tr>
+<tr class="health">
+<td class="stats">Health</td>
+<td class="stats" id="health_koh">100</td>
+<td class="stats" id="health_hass">150</td>
+<td class="stats" id="health_muri">110</td>
+<td class="stats" id="health_cham">100</td>                                         </tr>
+</table>
+<table class="monsters" id="table">
+<tr class="monster">
+<td class="stats">Monsters :</td>
+<td class="stats" id="alpha">Alpha</td>
+<td class="stats" id="beta">Beta</td>
+<td class="stats" id="gamma">Gamma</td>                                    </tr>
+<tr class="health">
+<td class="stats">Health</td>
+<td class="stats" id="health_alpha">150</td>
+<td class="stats" id="health_beta">120</td>
+<td class="stats" id="health_gamma">100</td>
+                                        </tr>
+                                       
+</table>
+<section class="bottom">
+<section class="characters" id="click">
+<div class ="choice" id="attack" onclick="next_move = attack(selected_monster, next_move, koh, hass, muri, cham, health_alpha, health_beta, health_gamma, hero_defense)">attack</div>
+<div class ="choice" id="defense" onclick="hero_defense = defense(selected_monster, next_move, koh, hass, muri, cham, hero_defense">defense</div>
+</section>
+<div class ="characters" id="message"></div>
+</section>
+    
+  <img src="https://opengameart.org/sites/default/files/styles/medium/public/boss-preview.png">
+ <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
